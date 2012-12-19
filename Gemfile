@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'haml-rails'
+gem 'jquery-rails'
 gem 'rails', '3.2.8'
-
 gem 'sqlite3'
 
 group :assets do
@@ -10,8 +11,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :test do 
+group :development, :test do 
   gem 'rspec-rails'
 end
-
-gem 'jquery-rails'
