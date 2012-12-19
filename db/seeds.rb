@@ -3,5 +3,7 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+   post1 = BlogPost.create([{ title: 'Title 1' }, { author: 'Author 1' },{ article: 'This is an example post' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+#
+#

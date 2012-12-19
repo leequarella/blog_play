@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121219154107) do
+ActiveRecord::Schema.define(:version => 20121219160347) do
+
+  create_table "blog_posts", :force => true do |t|
+    t.string   "title"
+    t.string   "article"
+    t.string   "author"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "username"
