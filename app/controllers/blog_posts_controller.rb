@@ -1,10 +1,17 @@
 class BlogPostsController < ApplicationController
   def index
-    @posts = BlogPost.all
+    @blog_posts = BlogPost.all
   end
 
-  def new
-    @post = BlogPost.new
+  def show
+    @blog_post = BlogPost.find(params[:id])
+  end
+
+  def new 
+    @blog_post = BlogPost.new
+  end
+
+  def create
   end
 
 

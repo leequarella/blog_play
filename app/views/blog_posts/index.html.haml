@@ -1,0 +1,18 @@
+%h1
+  Blog Post
+
+%p
+  Here is the list of all the Blog Posts
+
+=@blog_posts.count
+%table
+  %tr
+    %th Title
+    %th Author
+  -@blog_posts.each do |bp|
+    %tr
+      %td= link_to bp.title, blog_post_path(bp)
+      %td= bp.author
+
+%p
+  =link_to "NEW", new_blog_post_path
