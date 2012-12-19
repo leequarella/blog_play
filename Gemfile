@@ -13,6 +13,10 @@ group :assets do
 end
 
 group :development, :test do 
+  gem 'spork-rails'
   gem 'factory_girl_rails'
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'rb-inotify'
 end
